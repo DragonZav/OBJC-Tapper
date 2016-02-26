@@ -11,5 +11,13 @@
 @interface ViewController : UIViewController
 
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *logoImg;
+@property (weak, nonatomic) IBOutlet UITextField *howManyTapsTxt;
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *tapBtn;
+@property (weak, nonatomic) IBOutlet UILabel *tapsLbl;
+
 @end
 

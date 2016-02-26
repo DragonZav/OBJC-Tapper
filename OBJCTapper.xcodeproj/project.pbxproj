@@ -13,6 +13,7 @@
 		1E5BFDAA1C7FD1DB00CA8D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BFDA81C7FD1DB00CA8D0A /* Main.storyboard */; };
 		1E5BFDAC1C7FD1DB00CA8D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BFDAB1C7FD1DB00CA8D0A /* Assets.xcassets */; };
 		1E5BFDAF1C7FD1DB00CA8D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BFDAD1C7FD1DB00CA8D0A /* LaunchScreen.storyboard */; };
+		1E5BFDB81C7FE55A00CA8D0A /* TapperBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BFDB71C7FE55A00CA8D0A /* TapperBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1E5BFDAB1C7FD1DB00CA8D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5BFDAE1C7FD1DB00CA8D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E5BFDB01C7FD1DB00CA8D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5BFDB61C7FE55A00CA8D0A /* TapperBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapperBrain.h; sourceTree = "<group>"; };
+		1E5BFDB71C7FE55A00CA8D0A /* TapperBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapperBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +61,12 @@
 		1E5BFD9E1C7FD1DB00CA8D0A /* OBJCTapper */ = {
 			isa = PBXGroup;
 			children = (
+				1E5BFDB91C8027FA00CA8D0A /* Model */,
+				1E5BFDBA1C80281800CA8D0A /* View */,
+				1E5BFDBB1C80282600CA8D0A /* Control */,
 				1E5BFDA21C7FD1DB00CA8D0A /* AppDelegate.h */,
 				1E5BFDA31C7FD1DB00CA8D0A /* AppDelegate.m */,
-				1E5BFDA51C7FD1DB00CA8D0A /* ViewController.h */,
-				1E5BFDA61C7FD1DB00CA8D0A /* ViewController.m */,
-				1E5BFDA81C7FD1DB00CA8D0A /* Main.storyboard */,
 				1E5BFDAB1C7FD1DB00CA8D0A /* Assets.xcassets */,
-				1E5BFDAD1C7FD1DB00CA8D0A /* LaunchScreen.storyboard */,
 				1E5BFDB01C7FD1DB00CA8D0A /* Info.plist */,
 				1E5BFD9F1C7FD1DB00CA8D0A /* Supporting Files */,
 			);
@@ -77,6 +79,33 @@
 				1E5BFDA01C7FD1DB00CA8D0A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E5BFDB91C8027FA00CA8D0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BFDB61C7FE55A00CA8D0A /* TapperBrain.h */,
+				1E5BFDB71C7FE55A00CA8D0A /* TapperBrain.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1E5BFDBA1C80281800CA8D0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BFDA81C7FD1DB00CA8D0A /* Main.storyboard */,
+				1E5BFDAD1C7FD1DB00CA8D0A /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1E5BFDBB1C80282600CA8D0A /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BFDA51C7FD1DB00CA8D0A /* ViewController.h */,
+				1E5BFDA61C7FD1DB00CA8D0A /* ViewController.m */,
+			);
+			name = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5BFDB81C7FE55A00CA8D0A /* TapperBrain.m in Sources */,
 				1E5BFDA71C7FD1DB00CA8D0A /* ViewController.m in Sources */,
 				1E5BFDA41C7FD1DB00CA8D0A /* AppDelegate.m in Sources */,
 				1E5BFDA11C7FD1DB00CA8D0A /* main.m in Sources */,
@@ -299,6 +329,7 @@
 				1E5BFDB51C7FD1DB00CA8D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
